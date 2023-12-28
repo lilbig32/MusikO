@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Корзина.css">
+    <link rel="icon" href="img/logo.ico">
+    <title>MusikO</title>
+</head>
+<body>
+    <!--Меню с городом телефоном и социальными сетями-->
+    <div class="header-line">
+        <div class="city">
+            <p>Ваш город: Пермь</p>
+        </div>
+        
+        <div class="social">
+            <img src="img/ватс 1.svg" alt="">
+            <a href="https://t.me/LLilbig"><img src="img/телеграмм.svg" alt=""></a>
+            <img src="img/вк.svg" alt="">
+            <img src="img/вайбер.svg" alt="">
+            <img src="img/ютуб.svg" alt="">
+            <img src="img/инста 1.svg" alt="">
+        </div>
+
+        <div class="phone">
+            <img src="img/телефон.png" alt="" class="imgphone">
+            <p> 8 (800) 100 26 80   ЕЖЕДНЕВНО  10:00-20:00 </p>
+        </div>
+    </div>
+    <!------------------------------------------------>
+
+     <!--Горизонтальное меню-->
+     <nav>
+        
+          <a href="Главная.html"><img src="img/logo.png"></a>
+        
+        <ul class="menu">
+          <li><a href="Каталог.html">КАТАЛОГ</a></li>
+          <li><a href="Главная.html">ГЛАВНАЯ</a></li>
+          <li><a href="О нас.html">О НАС</a></li>
+          <li><a href="Где мы.html">ГДЕ МЫ?</a></li>
+          <li><a href="Войти.html">ЛИЧНЫЙ КАБИНЕТ</a></li>
+        </ul>
+        <div class="search-cart">
+            <a href="Каталог.html"><img src="img/поиск 1.png" class="imgsearch"></a>
+            <a href="Корзина.html"><img src="img/корзина.png" alt=""></a>
+        </div>
+      </nav>
+      <!-------------------------->
+
+
+    <div class="karta-tovara">
+        <p style="font-size: 36px; color: #ffffff; margin-bottom: 0; margin-top: 2%; margin-left: 4%;">Корзина</p>
+        <hr class="line">
+        <div class="karta">
+            <input type="checkbox"  class="ch">
+            <img src="img/гитара.png" style="margin-right: 2%;">
+            <div class="text">
+            <p style="color: #ffffff;">АКУСТИЧЕСКАЯ ГИТАРА<br>
+                KEPMA A1C NATURAL</p>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>Обечайки: Махагон</li>
+                    <li>Верхняя дека: Ель</li>
+                    <li>Задняя дека: Махагон</li>
+                    <li>Материал грифа: Красное дерево</li>
+                    <li>Накладка: Палисандр</li>
+                    <li>Колки: Фирменные закрытые</li>
+                    <li>Порожки: Nu-Bone</li>
+                    <li>Бридж: Палисандр</li>
+                </ul>
+            </div>
+
+            <div class="st">
+              <button id="decrement" style="background-color: rgba(19, 18, 24, 1); color: rgb(255, 255, 255); border: none; font-size: 30px;">-</button>
+              <input type="text" id="quantity" min="0" value="0" class="count" disabled >
+              <button id="increment" style="background-color: rgba(19, 18, 24, 1); color: rgba(234, 131, 5, 1); border: none; font-size: 25px;">+</button>
+            </div>
+
+            <div style="margin-left: 3%;">
+                <span id="totalAmountt" style="color: #ffffff; font-size: 24px;">0</span>
+            </div>
+            <p style="color: #ffffff; margin-left: 1%; font-size: 24px;">₽</p>
+        </div>
+
+        <hr class="line">
+        
+    </div>
+
+
+        <div class="summa">
+
+            <p style="color: rgba(255, 255, 255, 0.6);">ИТОГО</p>
+            <hr style="border: 1px solid rgba(216, 119, 0, 1);">
+
+            <div id="summary" class="summary">
+
+                <div style="margin-top: 13%;">
+                  <span>Общее количество: <span id="itemCount">0</span></span> <span style="margin: 3px;">шт</span>
+                </div>
+
+                <div style="margin-top: 7%;">
+                  <span>Общая стоимость: <span id="totalAmount">0</span></span> <span style="margin: 3px;">₽</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <a href="Оформление заказа.html" style="text-decoration: none;"><div class="button">
+            <p>Перейти к оформлению </p>
+        </div></a>
+
+       <!--Подвал-->
+       <hr class="underline">
+
+       <footer>
+           <div class="footer-container">
+               <div class="content">
+                 <div class="footer-text">
+                    <p>Остались вопросы?<br>
+                        8 (800) 100-26-80<br>
+                        
+                        ЕЖЕДНЕВНО 10:00 - 20:00
+                        musiko@mail.ru</p>
+    
+                        <p>© 2023 MusikO - музыкальный магазин<br>
+                            Политика конфиденциальности</p>
+                 </div>
+                   <div class="images">
+                       <img src="img/мастеркард.png">
+                       <img src="img/эплпей.png">
+                       <img src="img/пейпал.png">
+                       <img src="img/виза.png">
+                       <img src="img/яндекс моней.png">
+                   </div> 
+               </div>
+           </div>
+         </footer>  
+         <!-------------------------------------->
+
+        <script src="js/count.js"></script>
+</body>
+</html>

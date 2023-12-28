@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Личный кабинет.css">
+    <link rel="icon" href="img/logo.ico">
+    <title>MusikO</title>
+</head>
+<body>
+    <!--Меню с городом телефоном и социальными сетями-->
+    <div class="header-line">
+        <div class="city">
+            <p>Ваш город: Пермь</p>
+        </div>
+        
+        <div class="social">
+            <img src="img/ватс 1.svg" alt="">
+            <a href="https://t.me/LLilbig"><img src="img/телеграмм.svg" alt=""></a>
+            <img src="img/вк.svg" alt="">
+            <img src="img/вайбер.svg" alt="">
+            <img src="img/ютуб.svg" alt="">
+            <img src="img/инста 1.svg" alt="">
+        </div>
+
+        <div class="phone">
+            <img src="img/телефон.png" alt="" class="imgphone">
+            <p> 8 (800) 100 26 80   ЕЖЕДНЕВНО  10:00-20:00 </p>
+        </div>
+    </div>
+    <!------------------------------------------------>
+
+     <!--Горизонтальное меню-->
+     <nav>
+        
+        <a href="Главная.html"><img src="img/logo.png"></a>
+        
+        <ul class="menu">
+          <li><a href="Каталог.html">КАТАЛОГ</a></li>
+          <li><a href="Главная.html">ГЛАВНАЯ</a></li>
+          <li><a href="О нас.html">О НАС</a></li>
+          <li><a href="Где мы.html">ГДЕ МЫ?</a></li>
+          <li><a href="Войти.html">ЛИЧНЫЙ КАБИНЕТ</a></li>
+        </ul>
+        <div class="search-cart">
+            <a href="Корзина.html"><img src="img/корзина.png" alt=""></a>
+        </div>
+      </nav>
+      <!-------------------------->
+
+      <!--Имя и фото-->
+      <div class="user">
+        <div class="name-and-foto">
+            <img src="img/фотолч.png" alt="" style="margin-left: 50px;">
+            <p style="font-size: 43px; margin-left: 50px;">Гасымов Раул</p>
+            <img src="img/изменить-имя.png" alt="" style="margin-left: 30px;">
+        </div>
+      </div>
+      <!-------------------------->
+
+      <!--Электронная почта и номер телефона-->
+      <div class="email">
+        <div class="email-text">
+            <p>Электронная почта</p>
+        </div>
+        
+        <div class="email-input">
+            <input type="email" placeholder="У вас есть возможность привязать электронную почту" id="emailInput"> <button class="button" id="attachButton"><p>Привязать</p></button>
+            <div id="emailError" class="error-message"></div>
+        </div>
+      </div>
+
+      <div class="number">
+        <div class="number-text">
+            <p>Номер телефона</p>
+        </div>
+        
+        <div class="number-input">
+            <input type="text" placeholder="+7 (919) 679-34-84" readonly>
+        </div>
+      </div>
+      <!--------------------------->
+
+      <!--Заказы-->
+      <div class="zakaz">
+        <a href="Просмотр заказа.html"><p>Посмотреть заказы</p></a>
+      </div>
+      <!--------------------------->
+
+      <!--Выйти-->
+      <a href="О нас.html"><button class="button-exit"><p>Выйти</p></button></a>
+      <!--------->
+
+      <!--Подвал-->
+      <hr class="underline">
+
+      <footer>
+          <div class="footer-container">
+              <div class="content">
+                <div class="footer-text">
+                    <p>Остались вопросы?<br>
+                        8 (800) 100-26-80<br>
+                        
+                        ЕЖЕДНЕВНО 10:00 - 20:00
+                        musiko@mail.ru</p>
+    
+                        <p>© 2023 MusikO - музыкальный магазин<br>
+                            Политика конфиденциальности</p>
+                </div>
+                  <div class="images">
+                      <img src="img/мастеркард.png">
+                      <img src="img/эплпей.png">
+                      <img src="img/пейпал.png">
+                      <img src="img/виза.png">
+                      <img src="img/яндекс моней.png">
+                  </div> 
+              </div>
+          </div>
+        </footer>  
+        <!-------------------------------------->
+  
+        <script src="js/email.js"></script>
+</body>
+</html>
