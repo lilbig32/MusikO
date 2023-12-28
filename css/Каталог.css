@@ -1,0 +1,497 @@
+@font-face {
+    font-family:'ABeeZee'; 
+    src: url(font\ABeeZee-Regular.ttf); 
+}
+
+@font-face {
+	font-family: 'ABeeZee';
+	font-style: normal;
+	font-weight: normal;
+	src: local('ABeeZee'),
+		url(font/ABeeZee-Regular.ttf) format('ttf'),
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+    background-color: rgba(19, 18, 24, 1);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.header-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    margin-bottom: 0px;
+    align-items: center;
+    margin-top: 0px;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.city {
+    display: flex;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    margin-left: 10px;
+}
+.social{
+    display: flex;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    width: 21px;
+    height: 15px;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 720px) {
+  /* Дополнительные стили для мобильных устройств */
+  .social {
+    display: none;
+  }
+  
+}
+
+.social img{
+    margin-right: 20px;
+
+}
+
+.phone{
+    display: flex;
+    color: (255, 255, 255, 0.6);
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 327.78px;
+    height: 15px;
+    transition: 0.5s;
+    margin-left: 20px;
+}
+.imgphone{
+    width: 14px;
+    height: 12.11px;
+    margin-right: 0px;
+}
+
+nav{
+  margin: 0 auto;
+  width: 1400px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 720px) {
+  /* Дополнительные стили для мобильных устройств */
+  nav {
+  margin: 0 auto;
+  width: 720px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.menu li{
+  margin-right: 20px;
+}
+
+.menu li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.search-cart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.search-cart img{
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/*ПОИСК----------------------------------*/
+.search-bar {
+    font-size: 30px;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 840px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(72, 71, 76, 1);
+    padding: 5px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+@media screen and (max-width: 720px) {
+  /* Дополнительные стили для мобильных устройств */
+  .search-bar {
+  font-size: 10px;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 650px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(72, 71, 76, 1);
+  padding: 5px;
+  border-radius: 5px;
+  height: 30px;
+  }
+  
+}
+
+.search-icon {
+    margin-left: 5px;
+    width: 20px;
+    height: 22px;
+}
+
+.search-input {
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+    background-color: rgba(72, 71, 76, 1);
+    width: 750px;
+    outline: none;
+}
+
+/*фильтр*/
+.filter{
+    margin-left: 18%;
+    width: 767px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 720px) {
+  /* Дополнительные стили для мобильных устройств */
+  .filter {
+    margin: 0 auto;
+  width: 650px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+}
+
+.filter p{
+    font-size: 16px;
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 720px) {
+  /* Дополнительные стили для мобильных устройств */
+  .filter p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  }
+  
+}
+
+.filter select{
+    width: 171px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    outline: none;
+}
+
+select option {
+  margin: 40px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+
+.checkbox{
+    background-color: rgba(19, 18, 24, 1);
+}
+/*-------*/
+
+/*Каталог*/
+.cards {
+    display: grid;
+    /* Автоматически заполняем на всю ширину grid-контейнера */
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 100%;
+    max-width: 1000px; /* Ширина grid-контейнера */
+    justify-content: center;
+    justify-items: center; /* Размещаем карточку по центру */
+    column-gap: 20px; /* Отступ между колонками */
+    row-gap: 10px; /* Отступ между рядами */
+    margin: 0 auto;
+}
+
+.card {
+    margin-left: 0;
+    margin-top: 20px;
+    background-color: rgba(59, 58, 64, 1);
+    width: 225px;
+    min-height: 300px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в колонку */
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+}
+
+
+/* При наведении на карточку - меняем цвет тени */
+.card:hover {
+    box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+}
+
+.card__top {
+  flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+  position: relative;
+  overflow: hidden; /* Скрываем, что выходит за пределы */
+}
+
+/* Контейнер для картинки */
+.card__image {
+  display: block;
+  position: absolute;
+  margin-top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+
+}
+
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+  padding: 10px;
+}
+
+.card__prices {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.card__price--discount {
+  font-size: 18px;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.card__title {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.card__add {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: white;
+    padding: 10px;
+    background-color: rgba(216, 119, 0, 1);
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer; /* Меняем курсор при наведении */
+    transition: 0.2s;
+    margin-top: auto; /* Прижимаем кнопку к низу карточки */
+  }
+  
+  .card__add:hover {
+    background-color: #ff6633;
+    color: #fff;
+  }
+/*-------*/
+
+/*Страницы*/
+.page-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.page-numbers img{
+    cursor: pointer;
+}
+
+.page-numbers #current-page {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.page-numbers #current-page:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+/*--------*/
+
+/*подвал*/
+.underline {
+    margin-top: 5%;
+    margin-bottom: 0;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.2);
+  }
+  
+  footer {
+    width: 100%;
+    padding: 20px;
+    height: 180px;
+    padding-left: 20%;
+  }
+
+  @media screen and (max-width: 720px) {
+    footer {
+      max-width: 720px;
+      height: 180px;
+      padding: 0;
+    }
+    
+  }
+  
+  .footer-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+  
+  .images {
+    margin-left: 2%;
+    display: flex;
+  }
+  
+  .footer-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    font-size: 18px;
+    line-height: 150%;
+    color: #ffffff;
+  }
+
+  @media screen and (max-width: 720px) {
+    .footer-text {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      line-height: 150%;
+      color: #ffffff;
+      gap: 20%;
+    }
+    
+  }
+  
+  .images img {
+    height: 20px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 720px) {
+    .images img {
+      height: 20px;
+      cursor: pointer;
+  
+    }
+    
+  }
+
+  @media screen and (max-width: 720px) {
+    .images {
+      height: 20px;
+      cursor: pointer;
+      margin-left: 15%;
+      margin-bottom: 5%;
+    }
+    
+  }
+  
+  .content {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  @media screen and (max-width: 720px) {
+    .content {
+      display: flex;
+      align-items: flex-end;
+      width: 100%;
+      margin-left: 23%;
+      padding-bottom: 50px;
+      padding-top: 50px;
+      padding-left: 30px;
+    }
+    
+  }
+  
+  .content p {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 720px) {
+    .content p {
+      margin-bottom: 0;
+      font-size: 18px;
+      line-height: 150%;
+      color: #ffffff;
+      width: 100%;
+      margin-top: 0;
+    }
+    
+  }
+/*---------------------------------*/
